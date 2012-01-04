@@ -1018,9 +1018,18 @@
   <!-- -->
 
   <!-- Application logic -->
-
+  
   <!-- DEVELOPMENT -->
   <script src='static/lib/app.js'></script>
+  
+  <script type='text/javascript'>
+  		$(
+			$.getJSON('static/models/KIG-101.js', function(data) {
+				BIMsurfer.loadScene(data);
+			})
+		  );
+  </script>
+  
   <!-- PRODUCTION --
   <script src='static/lib/app.min.js'></script>
   <!-- -->
